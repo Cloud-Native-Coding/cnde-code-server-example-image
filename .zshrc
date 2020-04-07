@@ -16,3 +16,5 @@ source <(k completion zsh)
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 PROMPT=$PROMPT'$(kube_ps1) '
+
+export DOCKER_HOST=tcp://0.0.0.0:2375
