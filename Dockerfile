@@ -28,10 +28,10 @@ RUN curl https://raw.githubusercontent.com/blendle/kns/master/bin/kns -o /usr/lo
     chmod +x /usr/local/bin/kns
 
 
-ENV DOCKER_HOST tcp://0.0.0.0:2375
-
 USER cnde
 WORKDIR /home/cnde
+
+ENV DOCKER_HOST tcp://0.0.0.0:2375
 
 RUN sudo chown -R cnde .
 
